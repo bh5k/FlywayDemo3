@@ -20,6 +20,8 @@ public class Person {
     )
     Long id;
 
+    private String name;
+
     @OneToMany(mappedBy = "person")
     private List<Post> posts;
 }
